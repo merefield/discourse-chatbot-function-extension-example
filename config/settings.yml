@@ -1,0 +1,4 @@
+plugins:
+  chatbot_function_extension_meaning_of_life_value:
+    default: 43
+    client: false

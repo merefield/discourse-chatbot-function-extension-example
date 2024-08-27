@@ -1,0 +1,12 @@
+en:
+  site_settings:
+    chatbot_function_extension_meaning_of_life_value: "The integer representing the meaning of life"
+  chatbot:
+    prompt:
+      function:
+        meaning_of_life:
+          description: |
+            returns the value representing the meaning of life
+          parameters: none
+          answer: "The meaning of life is %{value}"
+          error: there was an issue retrieving the meaning of life
