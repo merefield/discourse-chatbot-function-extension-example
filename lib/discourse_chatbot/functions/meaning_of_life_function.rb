@@ -23,9 +23,16 @@ module DiscourseChatbot
       begin
         super(args)
 
-        return I18n.t("chatbot.prompt.function.meaning_of_life.answer", value: SiteSetting.chatbot_function_extension_meaning_of_life_value)
+        result = I18n.t("chatbot.prompt.function.meaning_of_life.answer", value: SiteSetting.chatbot_function_extension_meaning_of_life_value)
+        {
+          answer: result[0..SiteSetting.chatbot_function_response_char_limit],
+          token_usage: 0
+        }
       rescue
-        I18n.t("chatbot.prompt.function.meaning_of_life.error")
+        {
+          answer: I18n.t("chatbot.prompt.function.meaning_of_life.error"),
+          token_usage: 0
+        }
       end
     end
   end

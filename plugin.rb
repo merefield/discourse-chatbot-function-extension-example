@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 # name: discourse-chatbot-function-extension-example
 # about: an example plugin that adds additional functions to the Discourse Chatbot
-# version: 0.0.1
+# version: 1.0.0
 # authors: merefield
 # url: https://github.com/merefield/discourse-chatbot-function-extension-example
 
